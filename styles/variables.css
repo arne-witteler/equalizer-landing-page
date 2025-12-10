@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --color-cyan: hsl(177, 68%, 64%);
+  --color-orange: hsl(12, 94%, 65%);
+  --color-yellow: hsl(33, 100%, 70%);
+  --color-white: hsl(20, 33%, 98%);
+  --color-slate: hsl(244, 23%, 12%);
+
+  --font-family-sans: 'IBM Plex Sans', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
