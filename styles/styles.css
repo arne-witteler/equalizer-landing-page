@@ -4,4 +4,225 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-family-sans);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.hero {
+  padding: 64px 20px 128px 20px;
+  background-image: url('../assets/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 100%;
+}
+
+.hero__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hero__logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 64px;
+}
+
+.hero__pattern {
+  display: none;
+}
+
+.hero__title {
+  font-size: 40px;
+  font-weight: var(--font-weight-bold:);
+  color: var(--color-slate);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+.hero__text {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-slate);
+  line-height: 1.5;
+  margin-bottom: 64px;
+}
+
+.app-preview {
+  position: relative;
+  width: 100%;
+  min-height: 380px;
+  background-color: var(--color-slate);
+  background-image: url('../assets/bg-pattern-2.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%;
+}
+
+.app-preview__image {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 430px;
+  width: auto;
+}
+
+.pricing {
+  padding: 48px 20px;
+  background-color: var(--color-orange);
+}
+
+.pricing__title {
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-slate);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.pricing__text {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-slate);
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.pricing__price {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 48px;
+}
+
+.pricing__price-value {
+  font-size: 64px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-slate);
+  line-height: 1.1;
+}
+
+.pricing__price-unit {
+  font-size: 20px;
+  font-weight: var(--font-weight-regular);
+}
+
+.pricing__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pricing__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.8;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pricing__button-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  background-color: currentColor;
+}
+
+.pricing__button--apple {
+  background-color: var(--color-slate);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-cyan);
+    color: var(--color-slate);
+  }
+}
+
+.pricing__button--android {
+  background-color: var(--color-white);
+  color: var(--color-slate);
+
+  &:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-slate);
+  }
+}
+
+.pricing__button-icon--apple {
+  mask: url("../assets/icon-apple.svg") no-repeat center / contain;
+  -webkit-mask: url("../assets/icon-apple.svg") no-repeat center / contain;
+}
+
+.pricing__button-icon--android {
+  mask: url("../assets/icon-android.svg") no-repeat center / contain;
+  -webkit-mask: url("../assets/icon-android.svg") no-repeat center / contain;
+}
+
+.footer {
+  padding: 64px 20px 80px 20px;
+  color: var(--color-slate);
+}
+
+.footer__logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 32px;
+}
+
+.footer__text {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.footer__social {
+  cursor: pointer;
+}
+
+.footer__social-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-color: var(--color-slate);
+}
+
+.footer__social:hover .footer__social-icon {
+  background-color: var(--color-yellow);
+}
+
+.footer__social-icon--facebook {
+  mask: url("../assets/icon-facebook.svg") no-repeat center / contain;
+  -webkit-mask: url("../assets/icon-facebook.svg") no-repeat center / contain;
+}
+
+.footer__social-icon--instagram {
+  mask: url("../assets/icon-instagram.svg") no-repeat center / contain;
+  -webkit-mask: url("../assets/icon-instagram.svg") no-repeat center / contain;
+}
+
+.footer__social-icon--twitter {
+  mask: url("../assets/icon-twitter.svg") no-repeat center / contain;
+  -webkit-mask: url("../assets/icon-twitter.svg") no-repeat center / contain;
 }
