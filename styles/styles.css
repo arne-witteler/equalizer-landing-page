@@ -321,3 +321,61 @@ footer {
     align-items: center;
   }
 }
+
+@media (min-width: 1440px) {
+
+  .page {
+    background-image: url('../assets/bg-main-desktop.png');
+    background-repeat: repeat;
+    background-position: center left;
+  }
+
+  .hero {
+    padding: 64px 80px 128px 80px;
+  }
+
+  .hero__pattern {
+    top: -40px;
+    right: -50px;
+    height: 486px;
+    width: auto;
+  }
+
+  .hero__title {
+    font-size: 88px;
+    max-width: 900px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    max-width: 736px;
+  }
+
+  .app-preview__image {
+    top: -100px;
+    left: 27%;
+    height: 606px;
+  }
+
+  .tablet-view {
+    max-width: 1120px;
+    width: 100vh;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .app-preview {
+    background-position: center top;
+  }
+
+  .pricing {
+    max-width: 450px;
+    bottom: -50px;
+    left: 52%;
+    padding: 56px;
+  }
+
+  .footer {
+    padding: 64px 80px 40px 80px;
+  }
+}
